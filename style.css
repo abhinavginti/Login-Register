@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    overflow: hidden;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(./Components/Images/lr_1.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #1c1c25;
+}
+.card
+{
+    position: relative;
+    width: 905px;
+    height: 460px;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    margin: 30px;
+}
+.card .face
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 35px rgb(0, 0, 0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    transform-style: preserve-3d;
+    transition: 1s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    backface-visibility: hidden;
+}
+.left-face,.right-face
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+.back
+{
+    transform: rotateY(180deg);
+}
+.btn
+{
+    color: #fff;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    padding: 10px 30px;
+    display: block;
+    margin: 10px auto;
+    background:transparent;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover
+{
+    color: #000;
+    background:#fff;
+    transition: 0.5s ease;
+}
+.face .left-face .connect-icons
+{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0px;
+}
+.face .left-face .connect-icons i
+{
+    color: #fff;
+    margin: 0px 10px;
+    font-size: 1.7rem;
+}
+.face .left-face .connect-icons a
+{
+    transition: 1s ease;
+}
+.face .left-face .connect-icons a:hover
+{
+    transform: translateY(-3px);
+    transition: 1s ease;
+}
+
+.input-field
+{
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom:1px solid #999 ;
+    border-right: 0;
+    outline: none;
+    background:transparent;
+    font-weight: 900;
+}
+.right-face label
+{
+    margin: 0 4px;
+    font-size: 0.9rem;
+}
