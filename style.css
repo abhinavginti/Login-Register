@@ -8,7 +8,7 @@
 }
 body
 {
-    overflow: hidden;
+    overflow-x:hidden;
 }
 .container
 {
@@ -42,7 +42,8 @@ body
     height: 100%;
     box-shadow: 0 15px 35px rgb(0, 0, 0,0.5);
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.05); /*for glassmorphism*/
+    /*background: rgba(0, 0, 0, 0.438);*/ /*for translucent black BG*/
     backdrop-filter: blur(10px);
     transform-style: preserve-3d;
     transition: 1s;
@@ -113,7 +114,15 @@ body
     transform: translateY(-3px);
     transition: 1s ease;
 }
-
+.left-face p
+{
+    margin: 3px 0;
+    padding: 1px;
+}
+.left-face p:nth-child(4)
+{
+    text-align: center;
+}
 .input-field
 {
     color: white;
@@ -130,6 +139,18 @@ body
 }
 .right-face label
 {
+    position: absolute;
     margin: 0 4px;
     font-size: 0.9rem;
+    text-align: center;
 }
+::-webkit-input-placeholder
+{
+    color: rgba(255, 255, 255, 0.719);
+    font-weight: 100;
+}
+
+      
+::-webkit-scrollbar { 
+    display: none;
+    } 

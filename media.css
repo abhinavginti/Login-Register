@@ -3,10 +3,17 @@
     .container
     {
         background: url(./Components/Images/mobilebg.jpg);
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 @media screen and (max-width: 805px)
 {
+    body{
+        overflow:auto;
+    }
     .container
     {
         height: auto;
@@ -37,7 +44,6 @@
 }
 @media screen and (min-width: 805px)
 {
-    body{overflow: hidden;}
     .card .face
     {
         flex-direction: row;
