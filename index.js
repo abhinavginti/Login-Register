@@ -12,3 +12,10 @@ signup.addEventListener('click',()=>
     back.style.transform="rotateY(180deg)";
     front.style.transform="rotateY(0deg)";
 })
+
+
+const loader=document.querySelector('.loader-container');
+window.addEventListener('load',()=>{
+    loader.style.opacity="0";
+    loader.style.visibility="hidden";
+})
